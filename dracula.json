@@ -1,9 +1,9 @@
 {
   "$schema": "https://opencode.ai/theme.json",
   "defs": {
-    "background": "#282A36",
-    "currentLine": "#44475A",
-    "selection": "#44475A",
+    "bgPrimary": "#282A36",
+    "bgSecondary": "#44475A",
+    "bgSelection": "#44475A",
     "foreground": "#F8F8F2",
     "comment": "#6272A4",
     "red": "#FF5555",
@@ -12,7 +12,9 @@
     "green": "#50FA7B",
     "cyan": "#8BE9FD",
     "purple": "#BD93F9",
-    "pink": "#FF79C6"
+    "pink": "#FF79C6",
+    "bgDiffAdded": "#2B3A2F",
+    "bgDiffRemoved": "#3D2A2E"
   },
   "theme": {
     "primary": {
@@ -52,28 +54,28 @@
       "light": "comment"
     },
     "background": {
-      "dark": "background",
-      "light": "background"
+      "dark": "bgPrimary",
+      "light": "bgPrimary"
     },
     "backgroundPanel": {
-      "dark": "currentLine",
-      "light": "currentLine"
+      "dark": "bgSecondary",
+      "light": "bgSecondary"
     },
     "backgroundElement": {
-      "dark": "currentLine",
-      "light": "currentLine"
+      "dark": "bgSecondary",
+      "light": "bgSecondary"
     },
     "border": {
-      "dark": "selection",
-      "light": "selection"
+      "dark": "bgSelection",
+      "light": "bgSelection"
     },
     "borderActive": {
       "dark": "purple",
       "light": "purple"
     },
     "borderSubtle": {
-      "dark": "selection",
-      "light": "selection"
+      "dark": "bgSelection",
+      "light": "bgSelection"
     },
     "diffAdded": {
       "dark": "green",
@@ -100,28 +102,28 @@
       "light": "red"
     },
     "diffAddedBg": {
-      "dark": "#2B3A2F",
-      "light": "#2B3A2F"
+      "dark": "bgDiffAdded",
+      "light": "bgDiffAdded"
     },
     "diffRemovedBg": {
-      "dark": "#3D2A2E",
-      "light": "#3D2A2E"
+      "dark": "bgDiffRemoved",
+      "light": "bgDiffRemoved"
     },
     "diffContextBg": {
-      "dark": "currentLine",
-      "light": "currentLine"
+      "dark": "bgSecondary",
+      "light": "bgSecondary"
     },
     "diffLineNumber": {
       "dark": "comment",
       "light": "comment"
     },
     "diffAddedLineNumberBg": {
-      "dark": "#2B3A2F",
-      "light": "#2B3A2F"
+      "dark": "bgDiffAdded",
+      "light": "bgDiffAdded"
     },
     "diffRemovedLineNumberBg": {
-      "dark": "#3D2A2E",
-      "light": "#3D2A2E"
+      "dark": "bgDiffRemoved",
+      "light": "bgDiffRemoved"
     },
     "markdownText": {
       "dark": "foreground",

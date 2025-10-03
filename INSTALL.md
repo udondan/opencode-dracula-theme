@@ -14,6 +14,26 @@ Download using the [GitHub `.zip` download](https://github.com/dracula/opencode/
 
 #### Activating theme
 
-1. Do this;
-2. Then that;
-3. Boom! It's working ✨
+1. Create the OpenCode themes directory if it doesn't exist:
+
+   ```bash
+   mkdir -p ~/.config/opencode/themes
+   ```
+
+2. Symlink the theme file to the OpenCode themes directory:
+
+   ```bash
+   ln -s /path/to/opencode-dracula-theme/dracula.json ~/.config/opencode/themes/dracula.json
+   ```
+
+   Replace `/path/to/opencode-dracula-theme` with the actual path where you cloned/downloaded the theme.
+
+3. Edit your OpenCode configuration file (`~/.config/opencode/config.json`) and set the theme:
+
+   ```json
+   {
+     "theme": "dracula"
+   }
+   ```
+
+4. Restart OpenCode
